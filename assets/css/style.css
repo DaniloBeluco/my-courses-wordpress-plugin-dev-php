@@ -1,0 +1,105 @@
+#my-course_wrapper {
+    width: 100% !important;
+}
+
+.card {
+    max-width: 1400px !important;
+    width: 100%;
+}
+
+.card-header {
+    background: #2a76b5;
+    color: white;
+}
+
+.card {
+    padding: 0;
+}
+
+#my-course_length {
+    width: 40%;
+    display: inline;
+}
+
+#my-course_filter {
+    width: 218px !important;
+    display: inline;
+    float: right;
+    margin-top: -5px;
+}
+
+#frmAddCourse label.error,
+#frmEditCourse label.error {
+    color: red;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    width: 50% !important;
+    display: inline;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+    width: 30%;
+    float: right;
+}
+
+.btncoursedelete,
+.btncourseedit {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px soldi rgba(0, 0, 0, 0.933);
+    color: rgba(0, 0, 0, 0.933);
+}
+
+
+/* layout lista de produtos shortcode */
+
+.owt-layout {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    border: 1px solid #0000003b;
+    padding: 10px;
+    flex: 0 0 24%;
+    border-radius: 7px;
+    margin: 4px;
+}
+
+.bname {
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bauthor {
+    font-size: 10pt;
+    color: gray;
+    margin-top: -15px;
+}
+
+.babout {
+    border: 1px solid #8080805e;
+    padding: 3px;
+    font-size: 9pt;
+    color: gray;
+    border-radius: 14px;
+}
+
+.bbutton {
+    font-size: 10pt;
+    border-color: blue;
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    border-radius: 11px;
+    padding-right: 25px;
+    padding: 11px;
+    text-transform: uppercase;
+    padding-left: 25px;
+    border: 1px solid blue;
+}
