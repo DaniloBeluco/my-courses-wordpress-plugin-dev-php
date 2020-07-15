@@ -95,7 +95,8 @@ jQuery(document).ready(function() {
         var conf = confirm("Deseja mesmo excluir este curso ?");
         if (conf) {
             var course_id = jQuery(this).attr("data-id");
-            var postdata = "action=mycourselibrary&param=delete_course&id=" + course_id;
+            var postdata =
+                "action=mycourselibrary&param=delete_course&id=" + course_id;
             jQuery.post(mycourseajaxurl, postdata, function(response) {
                 var data = jQuery.parseJSON(response);
                 if (data.status == 1) {
@@ -152,7 +153,8 @@ jQuery(document).ready(function() {
         var conf = confirm("Deseja mesmo excluir este autor ?");
         if (conf) {
             var author_id = jQuery(this).attr("data-id");
-            var postdata = "action=mycourselibrary&param=delete_author&id=" + author_id;
+            var postdata =
+                "action=mycourselibrary&param=delete_author&id=" + author_id;
             jQuery.post(mycourseajaxurl, postdata, function(response) {
                 var data = jQuery.parseJSON(response);
                 if (data.status == 1) {
@@ -190,7 +192,8 @@ jQuery(document).ready(function() {
         var conf = confirm("Deseja mesmo excluir este estudante ?");
         if (conf) {
             var student_id = jQuery(this).attr("data-id");
-            var postdata = "action=mycourselibrary&param=delete_student&id=" + student_id;
+            var postdata =
+                "action=mycourselibrary&param=delete_student&id=" + student_id;
             jQuery.post(mycourseajaxurl, postdata, function(response) {
                 var data = jQuery.parseJSON(response);
                 if (data.status == 1) {
@@ -205,4 +208,24 @@ jQuery(document).ready(function() {
             });
         }
     });
+
+    /* Ao clicar em Filtrar */
+    /* jQuery("#frmFilterCourse").validate({
+         submitHandler: function() {
+             var postdata =
+                 "action=mycourselibrary&param=filter_course&" +
+                 jQuery("#frmFilterCourse").serialize();
+
+             jQuery.post(mycourseajaxurl, postdata, function(response) {
+                 var data = jQuery.parseJSON(response);
+                 if (data.status == 1) {
+
+                 } else {
+                     jQuery("#mb_success_message").html(
+                         "<div class='alert alert-success'>" + data.message + "</div>"
+                     );
+                 }
+             });
+         },
+     }); */
 });

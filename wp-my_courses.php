@@ -36,7 +36,7 @@ function my_courses_include_assets()
 
     $slug = '';
 
-    $pages_includes = array("frontendpage", "course-list", "add-new", "edit", "add-author", "remove-author", "add-student", "remove-student", "course-tracker");
+    $pages_includes = array("frontendpage", "course-list", "add-new", "edit", "add-author", "remove-author", "add-student", "remove-student", "course-tracker", "my-course");
 
     $currentPage = $_GET['page'];
 
@@ -61,9 +61,9 @@ function my_courses_include_assets()
     /* Só vai registrar os assets se estiver em uma página do plugin */
     if (in_array($currentPage, $pages_includes)) {
 
-
-        wp_enqueue_script("validate", "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js");
         wp_enqueue_script("jquery", "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
+        wp_enqueue_script("validate", "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js");
+        
 
         wp_enqueue_script("bootstrapjs", "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js");
         wp_enqueue_style("bootstrap", "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
